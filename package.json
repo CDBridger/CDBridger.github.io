@@ -27,15 +27,15 @@
     "gatsby-source-contentful": "^7.11.0",
     "gatsby-source-filesystem": "^4.13.0",
     "gatsby-transformer-sharp": "^4.13.0",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
     "react-helmet": "^6.1.0",
     "sass": "^1.51.0"
   },
   "devDependencies": {
     "@types/node": "^17.0.31",
-    "@types/react": "^17.0.44",
-    "@types/react-dom": "^17.0.16",
+    "@types/react": "^18.0.8",
+    "@types/react-dom": "^18.0.3",
     "typescript": "^4.6.4"
   }
 }
