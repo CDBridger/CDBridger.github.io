@@ -1,0 +1,26 @@
+main {
+    padding-top: 20px;
+    flex: auto;
+    display: flex;
+    align-self: center;
+    flex: 1;
+    flex-direction: column;  
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px 0%;
+}
+
+div {
+  display: flex;
+  flex-direction: column;  
+}
+
+span {
+    white-space: pre;
+}

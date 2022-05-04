@@ -1,5 +1,5 @@
-# Welcome
+# Read Me
 
-My name is Charles Bridger I am a 27 year old software developer/web dev residing in Auckland, New Zealand!
+This is the repository for my personal resume/blog site
 
-This website is currently under development, check back later for more content.
+It is built using gatsbyjs + yarn + typescript and hosted on github pages at [https://cdbridger.github.io/](https://cdbridger.github.io/)
