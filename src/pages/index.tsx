@@ -12,7 +12,7 @@ interface DataProps {
 // markup
 const IndexPage: React.FC<PageProps<DataProps>> = ({ data }) => {
   return (
-    <Layout pageTitle="Welcome">
+    <Layout pageTitle="About">
       <MDXRenderer>{data.mdx.body}</MDXRenderer>
     </Layout>
   );

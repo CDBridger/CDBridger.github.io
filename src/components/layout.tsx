@@ -14,8 +14,8 @@ const Layout: React.FC<Props> = ({children, pageTitle}) => {
             <title>{pageTitle}</title>
             <nav>
                 <ul className="nav-links">
-                    <li className="nav-link-item"><Link to="/" className="navLinkText">Home</Link></li>
-                    <li className="nav-link-item"><Link to="/about" className="navLinkText">About</Link></li>
+                    <li className="nav-link-item"><Link to="/" className="navLinkText">About</Link></li>
+                    <li className="nav-link-item"><Link to="/history" className="navLinkText">Work</Link></li>
                     <li className="nav-link-item"><Link to="/blogs" className="navLinkText">Blogs</Link></li>
                 </ul>
             </nav>
