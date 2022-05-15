@@ -15,6 +15,8 @@ type Props = {
     article?: boolean
 }
 
+const selectedLinkColour = '#e091ff';
+
 const Layout: React.FC<Props> = ({children, pageTitle, article}) => {
     const { pathname } = useLocation()
 
@@ -26,7 +28,7 @@ const Layout: React.FC<Props> = ({children, pageTitle, article}) => {
     const homeLinks = () => {
         return(
             <>
-                <li className="about-link"><LinkFadeDown url="/"><span style={{color: '#eb75f6'}}>About</span></LinkFadeDown></li>
+                <li className="about-link"><LinkFadeDown url="/"><span style={{color: selectedLinkColour}}>About</span></LinkFadeDown></li>
                 <li className="blogs-link"><LinkFadeLeft url="/blogs"><span>Blogs</span></LinkFadeLeft></li>
                 <li className="work-link"><LinkFadeLeft url="/history"><span>Work</span></LinkFadeLeft></li>
                 <li className="contact-link"><LinkFadeLeft url="/contact"><span>Contact</span></LinkFadeLeft></li>
@@ -39,7 +41,7 @@ const Layout: React.FC<Props> = ({children, pageTitle, article}) => {
         return(
             <>
                 <li className="about-link"><LinkFadeRight url="/"><span >About</span></LinkFadeRight></li>
-                <li className="blogs-link"><LinkFadeDown url="/blogs"><span style={{color: '#eb75f6'}}>Blogs</span></LinkFadeDown></li>
+                <li className="blogs-link"><LinkFadeDown url="/blogs"><span style={{color: selectedLinkColour}}>Blogs</span></LinkFadeDown></li>
                 <li className="work-link"><LinkFadeLeft url="/history"><span>Work</span></LinkFadeLeft></li>
                 <li className="contact-link"><LinkFadeLeft url="/contact"><span>Contact</span></LinkFadeLeft></li>
                 <div className="animation start-blog" />
@@ -53,7 +55,7 @@ const Layout: React.FC<Props> = ({children, pageTitle, article}) => {
             <>
                 <li className="about-link"><LinkFadeRight url="/"><span>About</span></LinkFadeRight></li>
                 <li className="blogs-link"><LinkFadeRight url="/blogs"><span>Blogs</span></LinkFadeRight></li>
-                <li className="work-link"><LinkFadeDown url="/history"><span style={{color: '#eb75f6'}}>Work</span></LinkFadeDown></li>
+                <li className="work-link"><LinkFadeDown url="/history"><span style={{color: selectedLinkColour}}>Work</span></LinkFadeDown></li>
                 <li className="contact-link"><LinkFadeLeft url="/contact"><span>Contact</span></LinkFadeLeft></li>
                 <div className="animation start-work" />
             </>
@@ -66,7 +68,7 @@ const Layout: React.FC<Props> = ({children, pageTitle, article}) => {
                 <li className="about-link"><LinkFadeLeft url="/"><span>About</span></LinkFadeLeft></li>
                 <li className="blogs-link"><LinkFadeLeft url="/blogs"><span>Blogs</span></LinkFadeLeft></li>
                 <li className="work-link"><LinkFadeLeft url="/history"><span>Work</span></LinkFadeLeft></li>
-                <li className="contact-link"><LinkFadeDown url="/contact"><span style={{color: '#eb75f6'}}>Contact</span></LinkFadeDown></li>
+                <li className="contact-link"><LinkFadeDown url="/contact"><span style={{color: selectedLinkColour}}>Contact</span></LinkFadeDown></li>
                 <div className="animation start-contact" />
             </>
         )

@@ -18,7 +18,7 @@ span {
 	width: 100px;
 }
 .contact-link {
-	width: 100px;
+	width: 120px;
 }
 
 
@@ -30,29 +30,32 @@ li:hover>a>span {
     color: white;
 }
 
-
 nav span {
     color: black;
 }
 
+nav a {
+    text-decoration: none;
+}
+
 nav .start-about, .about-link:hover~.animation {
     width: 100px;
-	left: 30px;
+	left: 15px;
 	background-color: #9b59b6;
 }
 nav .start-blog, .blogs-link:hover~.animation {
 	width: 100px;
-	left: 130px;
+	left: 115px;
 	background-color: #9b59b6;
 }
 nav .start-work, .work-link:hover~.animation {
 	width: 100px;
-	left: 230px;
+	left: 215px;
 	background-color: #9b59b6;
 }
 nav .start-contact, .contact-link:hover~.animation {
-	width: 100px;
-	left: 330px;
+	width: 120px;
+	left: 315px;
 	background-color: #9b59b6;
 }
 
@@ -71,8 +74,8 @@ nav ul {
 	border-radius: 8px;
 	font-size: 0;
     align-items: center;
-
 }
+
 nav ul li {
 	height: 100%;
 	font-size: 15px;
@@ -86,3 +89,102 @@ nav ul li {
     vertical-align: middle;
     padding-top: 0.5rem;
 }
+
+
+@media only screen and (max-device-width: 700px) {
+   
+    .about-link {
+        width: 70px;
+    }
+    .blogs-link {
+        width: 70px;
+    }
+    .work-link {
+        width: 70px;
+    }
+    .contact-link {
+        width: 70px;
+    }
+    
+    nav .start-about, .about-link:hover~.animation {
+        width: 70px;
+        left: 30px;
+        background-color: #9b59b6;
+    }
+    nav .start-blog, .blogs-link:hover~.animation {
+        width: 70px;
+        left: 100px;
+        background-color: #9b59b6;
+    }
+    nav .start-work, .work-link:hover~.animation {
+        width: 70px;
+        left: 170px;
+        background-color: #9b59b6;
+    }
+    nav .start-contact, .contact-link:hover~.animation {
+        width: 85px;
+        left: 245px;
+        background-color: #9b59b6;
+    }
+
+    nav ul {
+        position: relative;
+        left: -30px;
+        border-radius: 8px;
+        font-size: 0;
+        align-items: center;
+    }
+    
+}
+    
+@media only screen and (max-device-width: 900px) and (min-device-width: 700px) {   
+
+    html{
+        background-color: red;
+    }
+
+    .about-link {
+        width: 80px;
+    }
+    .blogs-link {
+        width: 80px;
+    }
+    .work-link {
+        width: 80px;
+    }
+    .contact-link {
+        width: 90px;
+    }
+    
+    nav .start-about, .about-link:hover~.animation {
+        width: 80px;
+        left: 30px;
+        background-color: #9b59b6;
+    }
+    nav .start-blog, .blogs-link:hover~.animation {
+        width: 80px;
+        left: 110px;
+        background-color: #9b59b6;
+    }
+    nav .start-work, .work-link:hover~.animation {
+        width: 80px;
+        left: 190px;
+        background-color: #9b59b6;
+    }
+    nav .start-contact, .contact-link:hover~.animation {
+        width: 90px;
+        left: 270px;
+        background-color: #9b59b6;
+    }
+
+    nav ul {
+        position: relative;
+        left: -30px;
+        border-radius: 8px;
+        font-size: 0;
+        align-items: center;
+    }
+    
+}
+
+
