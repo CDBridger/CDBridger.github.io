@@ -1,0 +1,88 @@
+.container {
+    margin: auto;
+    max-width: 800px;
+    font-family: sans-serif;
+}
+
+span {
+    white-space: pre;
+}
+
+.about-link {
+	width: 100px;
+}
+.blogs-link {
+	width: 100px;
+}
+.work-link {
+	width: 100px;
+}
+.contact-link {
+	width: 100px;
+}
+
+
+li>a>span {
+    transition: color 1s;
+}
+
+li:hover>a>span {
+    color: white;
+}
+
+
+nav span {
+    color: black;
+}
+
+nav .start-about, .about-link:hover~.animation {
+    width: 100px;
+	left: 30px;
+	background-color: #9b59b6;
+}
+nav .start-blog, .blogs-link:hover~.animation {
+	width: 100px;
+	left: 130px;
+	background-color: #9b59b6;
+}
+nav .start-work, .work-link:hover~.animation {
+	width: 100px;
+	left: 230px;
+	background-color: #9b59b6;
+}
+nav .start-contact, .contact-link:hover~.animation {
+	width: 100px;
+	left: 330px;
+	background-color: #9b59b6;
+}
+
+nav .animation {
+	position: absolute;
+	height: 2rem;
+	top: 0;
+	z-index: 0;
+	transition: all .5s ease 0s;
+	border-radius: 8px;
+}
+
+nav ul {
+	position: relative;
+    left: -30px;
+	border-radius: 8px;
+	font-size: 0;
+    align-items: center;
+
+}
+nav ul li {
+	height: 100%;
+	font-size: 15px;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+	cursor: pointer;
+    vertical-align: middle;
+    padding-top: 0.5rem;
+}

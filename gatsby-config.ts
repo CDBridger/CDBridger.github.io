@@ -6,7 +6,8 @@ require("dotenv").config({
 const config: GatsbyConfig = {
   siteMetadata: {
     title: `Charles Bridger's Website`,
-    siteUrl: `https://cdbridger.github.io/`,
+    url: `https://cdbridger.github.io`,
+    description: "A collection of blogs written by Charles Bridger",
   },
   plugins: [
     {
@@ -22,6 +23,9 @@ const config: GatsbyConfig = {
     "gatsby-plugin-mdx",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
+    {
+      resolve: "gatsby-plugin-transition-link",
+    },
     {
       resolve: "gatsby-source-filesystem",
       options: {
